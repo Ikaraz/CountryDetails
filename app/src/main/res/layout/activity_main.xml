@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"    >
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="40dp">
+
+        <RelativeLayout
+            android:id="@+id/topLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/editCountryName"
+                android:hint="Enter country name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/middleLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/topLayout"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/txtCountryName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Country name"
+                android:layout_marginBottom="10dp"/>
+            <TextView
+                android:id="@+id/txtCapital"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Capital"
+                android:layout_below="@+id/txtCountryName"
+                android:layout_marginBottom="10dp"/>
+            <TextView
+                android:id="@+id/txtRegion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Region"
+                android:layout_below="@+id/txtCapital"
+                android:layout_marginBottom="10dp"/>
+            <TextView
+                android:id="@+id/txtPopulation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Population"
+                android:layout_below="@+id/txtRegion"
+                android:layout_marginBottom="10dp"/>
+            <TextView
+                android:id="@+id/txtDemonym"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Demonym"
+                android:layout_below="@+id/txtPopulation"
+                android:layout_marginBottom="10dp"/>
+            <TextView
+                android:id="@+id/txtTimeZone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Time zone"
+                android:layout_below="@+id/txtDemonym"
+                android:layout_marginBottom="10dp"/>
+            <TextView
+                android:id="@+id/txtNativeName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Native Name"
+                android:layout_below="@+id/txtTimeZone"
+                android:layout_marginBottom="10dp"/>
+            <TextView
+                android:id="@+id/txtCallingCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Calling Code"
+                android:layout_below="@+id/txtNativeName"
+                android:layout_marginBottom="10dp"/>
+            <TextView
+                android:id="@+id/txtTopLvlDomain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Top level domain"
+                android:layout_below="@+id/txtCallingCode"
+                android:layout_marginBottom="10dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/bottomLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/middleLayout">
+
+            <Button
+                android:id="@+id/btnSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Search"
+                android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
